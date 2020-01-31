@@ -53,7 +53,32 @@ body, .app {
   bottom: 25px;
 }
 
-.open-search button {
+.search-book, .btn-close-search {
+	-webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+.open-search button, .search-book {
   display: block;
   width: 50px;
   height: 50px;
@@ -68,7 +93,7 @@ body, .app {
   outline: 0;
 }
 
-.open-search button:hover {
+.open-search button:hover, .search-book:hover {
   background-color: rgb(0, 102, 0);
 }
 
@@ -98,7 +123,7 @@ body, .app {
   outline: none;
 }
 
-.close-search {
+.close-search, .btn-close-search {
   display: block;
   top: 20px;
   left: 15px;
